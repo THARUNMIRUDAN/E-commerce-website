@@ -1,0 +1,31 @@
+{
+  "name": "royal-shopping",
+  "version": "1.0.0",
+  "description": "Royal Shopping — Modern MERN E-Commerce Platform",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed",
+    "seed:destroy": "npm --prefix server run seed:destroy",
+    "build:client": "npm --prefix client run build",
+    "install:all": "npm --prefix server install && npm --prefix client install"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "ecommerce",
+    "mern"
+  ],
+  "author": "ReVibe",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  },
+  "dependencies": {
+    "mongodb": "^7.5.0"
+  }
+}
