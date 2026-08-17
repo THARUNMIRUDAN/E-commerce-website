@@ -21,17 +21,6 @@ Full-stack MERN e-commerce web application with user authentication, product cat
    ```bash
    npm run install:all
    ```
-3. Configure environment variables in `server/.env`:
-   ```env
-   PORT=5000
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret_key
-   NODE_ENV=development
-   ```
-4. Seed the database with sample data:
-   ```bash
-   npm run seed
-   ```
 
 ### Running the App
 
